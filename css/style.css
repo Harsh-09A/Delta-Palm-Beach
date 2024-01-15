@@ -24,6 +24,10 @@ html {
   scroll-behavior: smooth;
 }
 
+/* 
+#b19652
+#f0c021
+*/
 :root {
   --colorPrimary: #b19652;
   --colorSecondary: #f0c021;
@@ -132,5 +136,33 @@ html {
 @media only screen and (max-width: 990px) {
   .desktop-slider {
     display: none;
+  }
+}
+
+/* Overview */
+.overview-para {
+  font-size: 0.95em;
+}
+@media screen and (max-width: 600px) {
+  .overview-para {
+    text-align: justify !important;
+  }
+}
+.overview_img {
+  height: 350px;
+
+  /* height: 500px; */
+}
+
+.overview_img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50px 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .overview_img {
+    height: 250px;
   }
 }
