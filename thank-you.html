@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delta Palm Beach</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/logo/favicon.webp" sizes="16x16" />
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"></script>
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+
+    <!-- Fancy Box CDN -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+    <!-- EmailJS CDN -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="js/mail.js"></script>
+
+    <!-- Custom CSS & JS  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
+  </head>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#main-navbar"
+    data-bs-root-margin="0px 0px -50%"
+    data-bs-smooth-scroll="true"
+    class="scrollspy"
+    tabindex="0"
+    data-offset="1">
+    <header class="fixed-top shadow-sm">
+      <nav
+        class="navbar navbar-expand-lg mx-auto"
+        style="background-color: #ffffff"
+        id="main-navbar">
+        <div class="container-fluid ms-3">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="img/logo/logo.png"
+              alt="Logo"
+              height="55px"
+              class="me-3" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"> </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav mx-auto mb-2 mb-lg-0 justify-content-end pe-4">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="index.html#slider_section">
+                  <i class="fa-solid fa-house nav-icon"></i>
+                  <span class="d-sm-inline"> Home </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#overview_section">
+                  <i class="fa-solid fa-coins nav-icon"></i>
+                  <span class="d-sm-inline"> Overview </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#hallmarks_section">
+                  <i class="fa-solid fa-star nav-icon"></i>
+                  <span class="d-sm-inline"> Project Hallmarks </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#features_section">
+                  <i class="fa-solid fa-bolt nav-icon"></i>
+                  <span class="d-sm-inline"> Features </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#gallery_section">
+                  <i class="fa-solid fa-images nav-icon"></i>
+                  <span class="d-sm-inline"> Gallery </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#configuration_section">
+                  <i class="fa-solid fa-sliders nav-icon"></i>
+                  <span class="d-sm-inline"> Configuration </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#amenities_section">
+                  <i class="fa-solid fa-wifi nav-icon"></i>
+                  <span class="d-sm-inline"> Amenities </span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#location_section">
+                  <i class="fa-solid fa-map-location nav-icon"></i>
+                  <span class="d-sm-inline"> Location </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#about_section">
+                  <i class="fa-solid fa-user nav-icon"></i>
+                  <span class="d-sm-inline"> About Us </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="thanku_section" class="container mt-5 p-4">
+        <div class="text-center">
+          <h2 class="section-heading text-center">Thank You</h2>
+          <p class="text-capitalize">
+            Your form is submitted, We'll get back to you soon.
+          </p>
+          <a href="index.html">
+            <button class="btn btn-primary submit-btn">Back To Home</button>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container text-center text-white">
+        <div class="d-flex justify-content-center">
+          <div class="qrcode">
+            <img src="img/qr/qr.jpg" class="" />
+            <!-- <p>
+              SAI WORLD CITY <br />
+              PHASE I - P52000006318
+            </p> -->
+          </div>
+        </div>
+        <div>
+          <p>MahaRERA Registration No.: P51700053083</p>
+
+          <p>
+            <a
+              href="https://maharera.mahaonline.gov.in"
+              style="color: #fff; text-decoration: none"
+              >maharera.mahaonline.gov.in</a
+            >
+          </p>
+          <div class="text-center">
+            <p class="contact_details">
+              <b> Site Address:-</b> Plot No. 87, Sector 11, Kharghar, Navi
+              Mumbai - 410210
+              <br />
+              <b> Contact No:-</b> +91 9321011681
+              <br />
+              <b> Email Address:-</b> support@shreejiinfinity.com
+            </p>
+          </div>
+
+          <p>
+            Disclaimer : All the specification, design, facilities, dimensions,
+            etc. are subject to the approval of the respective authorities &
+            developers and would be changed if necessary. The discretion remains
+            with the developers.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Mobile Footer Fixed Button -->
+    <div class="container-fluid fixed-bottom action-footer-container">
+      <ul class="nav nav-fill action-footer">
+        <li class="nav-item ps-1">
+          <a
+            onclick="return gtag_report_conversion('https://wa.me/+919321011681');"
+            href="https://wa.me/+919321011681"
+            class="text-decoration-none text-white">
+            <i class="fa-brands fa-whatsapp nav-icon"> </i> Whatsapp
+          </a>
+        </li>
+        <li class="nav-item ps-1">
+          <a
+            onclick="return gtag_report_conversion('tel:+919321011681');"
+            href="tel:+919321011681"
+            class="text-decoration-none text-white">
+            <i class="fa-solid fa-phone me-2"></i> Call Us
+          </a>
+        </li>
+
+        <li
+          class="nav-item"
+          data-bs-toggle="modal"
+          data-bs-target="#popupModal">
+          <i class="fa-solid fa-download nav-icon"></i> Brochure
+        </li>
+      </ul>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="popupModal"
+      tabindex="-1"
+      aria-labelledby="ModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Title -->
+          <div class="modal-header">
+            <!-- <h1 class="modal-title fs-5" id="ModalLabel">Modal title</h1> -->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+
+          <!-- Modal Body -->
+          <div class="modal-body">
+            <div class="container text-center">
+              <img src="img/logo/logo2.png" alt="" height="50px" />
+              <p class="mt-2">Register Here And Avail The Best Offers!!</p>
+            </div>
+            <div class="container">
+              <!--Enquire Form  -->
+              <div class="enquire-section">
+                <span class="d-block text-center fw-bold my-2">
+                  Get The Best Quote
+                </span>
+                <div class="container">
+                  <!-- Form -->
+                  <form id="contact-form-modal" class="text-center">
+                    <div class="mb-3">
+                      <label for="user_name_modal" class="form-label"
+                        >Name</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control inputStyle shadow-none"
+                        name="user_name"
+                        id="user_name_modal"
+                        placeholder="Name"
+                        autocomplete="off"
+                        required />
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="user_email_modal" class="form-label"
+                        >Email address</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control inputStyle shadow-none"
+                        name="user_email"
+                        id="user_email_modal"
+                        placeholder="Email Address"
+                        autocomplete="off" />
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="contact_number_modal" class="form-label"
+                        >Phone Number</label
+                      >
+                      <input
+                        type="tel"
+                        class="form-control inputStyle shadow-none"
+                        name="contact_number"
+                        id="contact_number_modal"
+                        pattern="[0-9]{10}"
+                        placeholder="Phone Number"
+                        oninvalid="setCustomValidity('Please enter a valid phone number. e.g., 12345-67890')"
+                        oninput="setCustomValidity('')"
+                        required />
+                    </div>
+
+                    <button type="submit" class="btn btn-primary submit-btn">
+                      Submit
+                    </button>
+                    <p class="m-2 form_norms">
+                      <span>
+                        Your contact details are safe with us. <br />
+                      </span>
+                      <span> Our team will be in touch with you soon.</span>
+                    </p>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal Footer -->
+          <div class="modal-footer"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating Button -->
+    <div class="floating_btn">
+      <a
+        target="_blank"
+        href="https://wa.me/+919321011681"
+        onclick="return gtag_report_conversion('https://wa.me/+919321011681');">
+        <div class="contact_icon">
+          <i class="fa-brands fa-whatsapp my-float"></i>
+        </div>
+      </a>
+      <p class="text_icon">Talk to us?</p>
+    </div>
+    <!-- Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"></script>
+  </body>
+</html>
