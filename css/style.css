@@ -166,3 +166,27 @@ html {
     height: 250px;
   }
 }
+
+/* Highlights */
+#highlights_section {
+  background: var(--highlightsBackground);
+  color: var(--colorWhite);
+}
+.highlights li {
+  font-size: 1.2em;
+  text-decoration: none;
+  list-style: none;
+  line-height: 2em;
+  border-bottom: 1px solid var(--highlightsBorder);
+  padding: 10px 0;
+}
+
+.highlights li:first-child {
+  border-top: 1px solid var(--highlightsBorder);
+}
+
+.fa-square-check {
+  font-size: 2em;
+  vertical-align: middle;
+  margin-right: 30px;
+}
