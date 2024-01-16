@@ -191,7 +191,7 @@ html {
   margin-right: 30px;
 }
 
-/* Config */
+/* Configuration */
 .config_container {
   width: 100vw;
   overflow-x: scroll;
@@ -202,24 +202,24 @@ html {
   scrollbar-width: none;
 }
 
-.scroll-disabler {
+.config_container .scroll-disabler {
   width: 100vw;
   height: 450px;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.0001);
 }
 
-::-webkit-scrollbar {
+.config_container::-webkit-scrollbar {
   display: none;
 }
 
-article {
+.config_container article {
   min-width: 350px;
   height: 100%;
   padding: 1rem;
   overflow-wrap: break-word;
 }
-article .wrapper {
+.config_container article .wrapper {
   padding: 1rem;
   background-color: #fff;
   height: 100%;
@@ -232,7 +232,7 @@ article .wrapper {
   background-color: var(--colorPrimary);
   color: var(--colorWhite);
 }
-/* Configuration */
+
 .config_container .card {
   width: 19rem;
 }
@@ -255,7 +255,7 @@ article .wrapper {
 .price_btn:active {
   background-color: var(--colorSecondary) !important;
   border-color: var(--colorSecondary) !important;
-  color: black;
+  color: var(--colorBlack);
   text-transform: uppercase;
 }
 
