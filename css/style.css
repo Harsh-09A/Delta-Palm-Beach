@@ -191,50 +191,31 @@ html {
   margin-right: 30px;
 }
 
+/* Gallery */
+.gal-img {
+  /* width: 19em !important; */
+  height: 200px;
+}
+.gal-img img {
+  width: 100% !important;
+  height: 100%;
+}
+
 /* Configuration */
-.config_container {
-  width: 100vw;
-  overflow-x: scroll;
-  white-space: nowrap;
-  background-color: #fff;
-  display: flex;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.config_container .scroll-disabler {
-  width: 100vw;
-  height: 450px;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.0001);
-}
-
-.config_container::-webkit-scrollbar {
-  display: none;
-}
-
-.config_container article {
-  min-width: 350px;
-  height: 100%;
-  padding: 1rem;
-  overflow-wrap: break-word;
-}
-.config_container article .wrapper {
-  padding: 1rem;
-  background-color: #fff;
-  height: 100%;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  border-radius: 25px;
-  overflow-wrap: break-word;
-}
-
-.config_container .card {
-  background-color: var(--colorPrimary);
-  color: var(--colorWhite);
-}
-
 .config_container .card {
   width: 19rem;
+}
+
+.prices_row {
+  width: 80%;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1000px) {
+  .config_container {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .prices_row .card img {
@@ -255,18 +236,6 @@ html {
 .price_btn:active {
   background-color: var(--colorSecondary) !important;
   border-color: var(--colorSecondary) !important;
-  color: var(--colorBlack);
-  text-transform: uppercase;
-}
-
-/* Gallery */
-.gal-img {
-  /* width: 19em !important; */
-  height: 200px;
-}
-.gal-img img {
-  width: 100% !important;
-  height: 100%;
 }
 
 /* Amenities */
@@ -279,6 +248,7 @@ figure.fig_img {
   min-width: 220px;
   max-width: 310px;
   max-height: 220px;
+
   width: 100%;
   background: #000000;
   text-align: left;
@@ -292,6 +262,7 @@ figure.fig_img *:after {
   transition: all 0.3s ease-in-out;
 }
 figure.fig_img img {
+  height: 100%;
   max-width: 100%;
   position: relative;
   -webkit-transform: scale(1.3);

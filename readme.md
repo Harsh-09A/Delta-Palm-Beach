@@ -39,3 +39,71 @@ Wings : 13 <br>
 - Eastern Express Hwy 10 Min Away From delta palm beach.
 - Vashi Station 10 Min Away From delta palm beach.
 - Upcoming Navi Mumbai International Airport 15 Min Away From delta palm beach.
+
+/_ Configuration _/
+.config_container {
+width: 100vw;
+overflow-x: scroll;
+white-space: nowrap;
+background-color: #fff;
+display: flex;
+-ms-overflow-style: none;
+scrollbar-width: none;
+}
+
+.config_container .scroll-disabler {
+width: 100vw;
+height: 450px;
+position: absolute;
+background-color: rgba(0, 0, 0, 0.0001);
+}
+
+.config_container::-webkit-scrollbar {
+display: none;
+}
+
+.config_container article {
+min-width: 350px;
+height: 100%;
+padding: 1rem;
+overflow-wrap: break-word;
+}
+.config_container article .wrapper {
+padding: 1rem;
+background-color: #fff;
+height: 100%;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+border-radius: 25px;
+overflow-wrap: break-word;
+}
+
+/_ .config_container .card {
+background-color: var(--colorPrimary);
+color: var(--colorWhite);
+} _/
+
+.config_container .card {
+width: 19rem;
+}
+
+.prices_row .card img {
+height: 200px;
+border: 1px solid var(--colorBackgroundOverlay);
+}
+
+.price_badge {
+padding: 10px;
+top: 0;
+left: 75%;
+font-size: 1em;
+font-weight: normal;
+background-color: var(--colorSecondary);
+}
+.price_btn,
+.price_btn:hover,
+.price_btn:active {
+background-color: var(--colorSecondary) !important;
+border-color: var(--colorSecondary) !important;
+color: var(--colorBlack);
+text-transform: uppercase;
+}
