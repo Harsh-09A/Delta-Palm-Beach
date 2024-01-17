@@ -201,43 +201,6 @@ html {
   height: 100%;
 }
 
-/* Configuration */
-.config_container .card {
-  width: 19rem;
-}
-
-.prices_row {
-  width: 80%;
-  justify-content: center;
-}
-
-@media screen and (min-width: 1000px) {
-  .config_container {
-    display: flex;
-    justify-content: center;
-  }
-}
-
-.prices_row .card img {
-  height: 200px;
-  border: 1px solid var(--colorBackgroundOverlay);
-}
-
-.price_badge {
-  padding: 10px;
-  top: 0;
-  left: 75%;
-  font-size: 1em;
-  font-weight: normal;
-  background-color: var(--colorSecondary);
-}
-.price_btn,
-.price_btn:hover,
-.price_btn:active {
-  background-color: var(--colorSecondary) !important;
-  border-color: var(--colorSecondary) !important;
-}
-
 /* Amenities */
 
 figure.fig_img {
@@ -614,3 +577,19 @@ figure.fig_img.hover h3 {
 /* .contact_details {
   text-align: justify;
 } */
+
+.price_badge {
+  padding: 10px;
+  top: 0;
+  left: 75%;
+  font-size: 1em;
+  font-weight: normal;
+  background-color: var(--colorPrimary);
+}
+
+.price_btn,
+.price_btn:hover,
+.price_btn:active {
+  background-color: var(--colorPrimary) !important;
+  border-color: var(--colorPrimary) !important;
+}

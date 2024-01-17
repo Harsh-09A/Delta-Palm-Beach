@@ -1,5 +1,6 @@
 (function () {
-  emailjs.init("BnRoAjGd5ec2E2VQn");
+  emailjs.init("to9PlFrMMimgruuH0");
+  // emailjs.init("BnRoAjGd5ec2E2VQn");
 })();
 
 // Get IP Address
@@ -25,8 +26,8 @@ const handleFormSubmit = async (formId, nameField, emailField, phoneField) => {
     // date_time: await get12HourTime(dateField),
     ip_address: await getIpAddress(),
 
-    to_email: "harsh.autowebbed@gmail.com",
-    company_name: "DIGIN",
+    to_email: "destinyrealestates@gmail.com",
+    company_name: "Delta Palm Beach",
   };
 
   //
