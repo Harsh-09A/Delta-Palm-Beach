@@ -26,7 +26,7 @@ const handleFormSubmit = async (formId, nameField, emailField, phoneField) => {
     // date_time: await get12HourTime(dateField),
     ip_address: await getIpAddress(),
 
-    to_email: "destinyrealestates@gmail.com",
+    to_email: "kavitagads@gmail.com",
     company_name: "Delta Palm Beach",
   };
 
