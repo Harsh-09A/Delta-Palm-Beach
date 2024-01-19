@@ -593,3 +593,13 @@ figure.fig_img.hover h3 {
   background-color: var(--colorPrimary) !important;
   border-color: var(--colorPrimary) !important;
 }
+
+.read_more {
+  background-color: transparent;
+  font-size: 14px;
+  margin: 0;
+  border-radius: 0;
+  width: fit-content;
+  padding-left: 10px;
+  color: var(--colorSecondary);
+}

@@ -17,22 +17,27 @@ async function getIpAddress() {
 }
 
 // Form Submit
-const handleFormSubmit = async (formId, nameField, emailField, phoneField) => {
+const handleFormSubmit = async (
+  formId,
+  nameField,
+  emailField,
+  phoneField,
+  privacyField
+) => {
   const templateParams = {
     user_name: document.getElementById(nameField).value,
     user_email: document.getElementById(emailField).value,
     contact_number: document.getElementById(phoneField).value,
-    // pickup_location: document.getElementById(locationField).value,
-    // date_time: await get12HourTime(dateField),
+    privacy_check: document.getElementById(privacyField).value,
     ip_address: await getIpAddress(),
 
     to_email: "kavitagads@gmail.com",
-    company_name: "Delta Palm Beach",
+    company_name: "Sai World Empire",
   };
 
-  //
+  // Send Form
 
-  emailjs.send("contact_service", "contact_form_2", templateParams).then(
+  emailjs.send("contact_service", "contact_form", templateParams).then(
     function (response) {
       console.log("SUCCESS!", response.status, response.text);
       // alert("Message Sent Final");
@@ -57,9 +62,8 @@ window.onload = function () {
         "contact-form",
         "user_name",
         "user_email",
-        "contact_number"
-        // "pickup_location",
-        // "date_time"
+        "contact_number",
+        "privacy_check"
       );
     });
 
@@ -71,9 +75,8 @@ window.onload = function () {
         "contact-form-modal",
         "user_name_modal",
         "user_email_modal",
-        "contact_number_modal"
-        // "pickup_location_modal",
-        // "date_time_modal"
+        "contact_number_modal",
+        "privacy_check_modal"
       );
     });
 };
